@@ -1,10 +1,11 @@
 #include <iostream>
 #include <thread>
 #include <unistd.h>
+#include <atomic>
 using namespace std;
 
 //volatile int opt = 1;
-int opt = 1;
+atomic <int> opt (1);
 
 void Fn(void) {
     cout << "in Fn ()" << endl;
