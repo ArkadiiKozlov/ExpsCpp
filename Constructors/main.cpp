@@ -70,7 +70,7 @@ int main()
     cout << endl;
     
     cout << "a4" << endl;
-    A a4(A{});  //!!! ()
+    A a4((A()));  //!!! () ! {}
     a4.p();
     cout << endl;
     
