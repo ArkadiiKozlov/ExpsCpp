@@ -43,7 +43,11 @@ void exp_dyn_static_cast ()
     cout << pA2 << " " << pB2 << " " << pA2 << endl;
     cout << pB2->g << endl;
     */
-    
+    cout << "next test" << endl;
+    Factory2 *fc2 = new Factory2 ();
+    fc2->F0();
+    Factory0 *fc0 = static_cast<Factory0 *> (fc2);
+    fc0->Factory0::F0();
     C* pC = new C;
     A* pA = static_cast<A*>(pC);
     //A* pA = pC;
